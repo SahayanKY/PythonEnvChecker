@@ -1,0 +1,6 @@
+#eclipseのプロジェクト設定ファイル
+.project
+.pydevproject
+
+#eclipseのGFM Viewerの出力ファイル
+*.md.html
