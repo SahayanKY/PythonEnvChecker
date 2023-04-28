@@ -63,6 +63,8 @@ def check():
     try:
         import torch
         libdict['torch'] = torch.__version__
+        libdict['torch-cuda'] = torch.cuda_version
+        libdict['torch-cuda is available'] = torch.cuda.is_available()
     except ModuleNotFoundError:
         pass
 
@@ -80,7 +82,8 @@ def check():
     except ModuleNotFoundError:
         pass
 
-    for name, version in libdict.items():
-        print('\t{}:{}'.format(name, version))
+    for name, value in libdict.items():
+        print('\t{}:{}'.format(name, value))
 
+    #
 
