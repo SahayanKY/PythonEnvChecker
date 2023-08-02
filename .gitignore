@@ -4,3 +4,6 @@
 
 #eclipseのGFM Viewerの出力ファイル
 *.md.html
+
+#python
+__pycache__/
