@@ -67,6 +67,8 @@ def check():
         libdict['torch-cuda is available'] = torch.cuda.is_available()
     except ModuleNotFoundError:
         pass
+    except OSError:
+        pass
 
     # plotly
     try:
